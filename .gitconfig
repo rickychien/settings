@@ -1,0 +1,18 @@
+[user]
+	name = Ricky Chien
+	email = ricky060709@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[color]
+	ui = always
+	branch = always
+	diff = always
+	interactive = always
+  status = always
+[core]
+	editor = vim
