@@ -13,6 +13,6 @@
 	branch = always
 	diff = always
 	interactive = always
-  status = always
+	status = always
 [core]
 	editor = vim
