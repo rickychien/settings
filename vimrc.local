@@ -1,0 +1,14 @@
+colorscheme kolor
+set t_Co=256
+set number
+set numberwidth=5
+set cindent
+set ruler
+set hlsearch
+set wrapscan
+set incsearch
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set noexpandtab
+set termencoding=utf-8
