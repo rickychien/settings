@@ -6,6 +6,8 @@
 	ci = commit
 	co = checkout
 	br = branch
+	di = diff
+	re = remote
 	unstage = reset HEAD --
 	last = log -1 HEAD
 [color]
