@@ -1,4 +1,5 @@
 colorscheme kolor
+syntax enable
 set t_Co=256
 set number
 set numberwidth=5
