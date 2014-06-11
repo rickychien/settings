@@ -11,6 +11,8 @@
 	lg = log --pretty=format:'%Cred%h%Creset - %Cblue%cN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	ac = !git add -A && git commit
+	aca = !git add -A && git commit --amend
 [color]
 	ui = always
 	branch = always
@@ -20,3 +22,5 @@
 [core]
 	editor = vim
 
+[push]
+	default = current
