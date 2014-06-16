@@ -1,4 +1,4 @@
-colorscheme kolor
+colorscheme desert
 syntax enable
 set t_Co=256
 set number
