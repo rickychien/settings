@@ -8,6 +8,7 @@
 	br = branch
 	di = diff
 	re = remote
+	cp = cherry-pick
 	lg = log --pretty=format:'%Cred%h%Creset - %Cblue%cN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	unstage = reset HEAD --
 	last = log -1 HEAD
