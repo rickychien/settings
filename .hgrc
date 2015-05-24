@@ -1,0 +1,13 @@
+[paths]
+try = ssh://hg.mozilla.org/try
+   
+[extensions]
+mq =
+
+[diff]
+git = 1
+unified = 8
+showfunc = 1
+   
+[ui]
+username = Ricky Chien <ricky060709@gmail.com>
