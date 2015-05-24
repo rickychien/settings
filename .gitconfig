@@ -15,9 +15,9 @@
 	ac = !git add -A && git commit
 	aca = !git add -A && git commit --amend
 [color]
-	ui = always
+	ui = true
 	branch = always
-	diff = always
+	diff = true
 	interactive = always
 	status = always
 [core]
