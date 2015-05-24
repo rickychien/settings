@@ -23,6 +23,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Shutnik/jshint2.vim'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
@@ -84,3 +85,4 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.vimrc<CR>
+nnoremap <Leader>l :JSHint<CR>
