@@ -70,6 +70,7 @@ set expandtab
 set termencoding=utf-8
 set pastetoggle=<F2>
 set laststatus=2
+set nowrap
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
