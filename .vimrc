@@ -24,6 +24,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shutnik/jshint2.vim'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
@@ -46,10 +47,13 @@ syntax enable
 set t_Co=256
 
 " vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#show_buffers = 1
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline#extensions#tabline#fnamemod = ':t'
+"let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 " Others
 set number
@@ -59,10 +63,10 @@ set ruler
 set hlsearch
 set wrapscan
 set incsearch
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-set noexpandtab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set expandtab
 set termencoding=utf-8
 set pastetoggle=<F2>
 set laststatus=2
@@ -85,3 +89,4 @@ nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.vimrc<CR>
 nnoremap <Leader>l :JSHint<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
