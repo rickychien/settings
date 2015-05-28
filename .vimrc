@@ -72,6 +72,7 @@ set termencoding=utf-8
 set pastetoggle=<F2>
 set laststatus=2
 set nowrap
+set cursorline
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
