@@ -8,7 +8,8 @@ fi
 
 echo "Link setting scripts to user home directory"
 
-BASEDIR=$(dirname $0)
+echo $(dirname $0)
+BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 SCRIPTS=('.gitconfig' '.hgrc' '.vimrc' '.zshrc')
 
 for script in ${SCRIPTS[@]}
