@@ -26,6 +26,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'mxw/vim-jsx'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
@@ -49,12 +50,12 @@ set t_Co=256
 
 " vim-airline
 let g:airline_powerline_fonts = 1
-"let g:airline#extensions#tabline#show_buffers = 1
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#left_sep = ' '
-"let g:airline#extensions#tabline#left_alt_sep = '|'
-"let g:airline#extensions#tabline#fnamemod = ':t'
-"let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 " Others
 set number
@@ -73,6 +74,7 @@ set pastetoggle=<F2>
 set laststatus=2
 set nowrap
 set cursorline
+set autoread
 
 " ctrlp
 let g:ctrlp_working_path_mode = 'r'
