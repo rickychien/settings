@@ -81,3 +81,4 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export TERM=xterm-256color
+alias FIREFOX=/Applications/Firefox.app/Contents/MacOS/firefox-bin
