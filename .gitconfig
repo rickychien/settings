@@ -14,6 +14,7 @@
 	last = log -1 HEAD
 	ac = !git add -A && git commit
 	aca = !git add -A && git commit --amend
+  sync = git pull upstream master && git push
 [color]
 	ui = true
 	branch = always
@@ -24,3 +25,7 @@
 	editor = vim
 [push]
 	default = current
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
