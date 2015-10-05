@@ -7,6 +7,8 @@
 	co = checkout
 	br = branch
 	di = diff
+	ph = push
+	pl = pull
 	re = remote
 	cp = cherry-pick
 	lg = log --pretty=format:'%Cred%h%Creset - %Cblue%cN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
