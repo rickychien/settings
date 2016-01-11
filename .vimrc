@@ -71,11 +71,16 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 set termencoding=utf-8
-set pastetoggle=<F2>
 set laststatus=2
 set nowrap
 set cursorline
 set autoread
+set backspace=2
+set paste
+set ignorecase
+
+" autocmd
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ctrlp
 let g:ctrlp_working_path_mode = 'r'
