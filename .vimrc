@@ -61,7 +61,6 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 " Others
 set number
 set numberwidth=5
-set cindent
 set ruler
 set hlsearch
 set wrapscan
@@ -76,8 +75,8 @@ set nowrap
 set cursorline
 set autoread
 set backspace=2
-set paste
 set ignorecase
+set autoindent
 
 " autocmd
 autocmd BufWritePre * :%s/\s\+$//e
