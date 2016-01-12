@@ -27,6 +27,7 @@ NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'valloric/YouCompleteMe'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
