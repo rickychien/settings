@@ -78,6 +78,7 @@ set autoread
 set backspace=2
 set ignorecase
 set autoindent
+set autoread
 
 " autocmd
 autocmd BufWritePre * :%s/\s\+$//e
