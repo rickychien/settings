@@ -137,3 +137,4 @@ nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.vimrc<CR>
 nnoremap <Leader>l :JSHint<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
