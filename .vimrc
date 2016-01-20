@@ -33,6 +33,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'mkarmona/colorsbox'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'vim-scripts/JavaScript-Indent', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
