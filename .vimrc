@@ -25,16 +25,14 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'valloric/YouCompleteMe'
 NeoBundle 'JazzCore/ctrlp-cmatcher'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'mkarmona/colorsbox'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'vim-scripts/JavaScript-Indent', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
