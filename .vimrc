@@ -28,7 +28,10 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'valloric/YouCompleteMe'
-NeoBundle 'burke/matcher'
+NeoBundle 'JazzCore/ctrlp-cmatcher'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'mkarmona/colorsbox'
+NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
@@ -46,7 +49,8 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 " color settings
-colorscheme hybrid
+let g:enable_bold_font = 1
+colorscheme hybrid_reverse
 syntax enable
 set t_Co=256
 
@@ -97,33 +101,8 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-" matcher
-if executable('matcher')
-	let g:ctrlp_match_func = { 'match': 'GoodMatch' }
-
-	function! GoodMatch(items, str, limit, mmode, ispath, crfile, regex)
-
-		" Create a cache file if not yet exists
-		let cachefile = ctrlp#utils#cachedir().'/matcher.cache'
-		if !( filereadable(cachefile) && a:items == readfile(cachefile) )
-			call writefile(a:items, cachefile)
-		endif
-		if !filereadable(cachefile)
-			return []
-		endif
-
-		" a:mmode is currently ignored. In the future, we should probably do
-		" something about that. the matcher behaves like "full-line".
-		let cmd = 'matcher --limit '.a:limit.' --manifest '.cachefile.' '
-		if !( exists('g:ctrlp_dotfiles') && g:ctrlp_dotfiles )
-			let cmd = cmd.'--no-dotfiles '
-		endif
-		let cmd = cmd.a:str
-
-		return split(system(cmd), "\n")
-
-	endfunction
-end
+" ctrlp-cmatcher
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'

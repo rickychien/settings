@@ -7,6 +7,7 @@
 	co = checkout
 	br = branch
 	di = diff
+  dl = diff HEAD~1
 	pf = push --force
 	pl = pull
 	re = remote
