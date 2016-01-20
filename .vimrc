@@ -30,6 +30,7 @@ NeoBundle 'valloric/YouCompleteMe'
 NeoBundle 'JazzCore/ctrlp-cmatcher'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
+NeoBundle 'elzr/vim-json'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
