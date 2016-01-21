@@ -1,9 +1,5 @@
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-
   " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -26,11 +22,11 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mxw/vim-jsx'
-NeoBundle 'valloric/YouCompleteMe'
 NeoBundle 'JazzCore/ctrlp-cmatcher'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'Shougo/deoplete.nvim'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
@@ -53,7 +49,6 @@ NeoBundleCheck
 let g:enable_bold_font = 1
 colorscheme hybrid_reverse
 syntax enable
-set t_Co=256
 
 " vim-airline
 let g:airline_powerline_fonts = 1
@@ -91,6 +86,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " ctrlp
 let g:ctrlp_working_path_mode = 'r'
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
 " the silver searcher
 if executable('ag')
