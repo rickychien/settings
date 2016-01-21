@@ -25,7 +25,7 @@
 	interactive = always
 	status = always
 [core]
-	editor = vim
+	editor = nvim
 [push]
 	default = current
 [filter "lfs"]
