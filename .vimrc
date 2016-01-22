@@ -84,11 +84,12 @@ set autoread
 " autocmd
 autocmd BufWritePre * :%s/\s\+$//e
 
-" ctrlp
-let g:ctrlp_working_path_mode = 'r'
-
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" ctrlp
+let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
 
 " the silver searcher
 if executable('ag')
@@ -99,9 +100,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" ctrlp-cmatcher
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
