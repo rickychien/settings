@@ -74,7 +74,6 @@ set expandtab
 set termencoding=utf-8
 set laststatus=2
 set nowrap
-set cursorline
 set autoread
 set backspace=2
 set ignorecase
