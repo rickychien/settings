@@ -19,7 +19,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Shutnik/jshint2.vim'
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'JazzCore/ctrlp-cmatcher'
@@ -103,6 +103,17 @@ endif
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_ignore_files = ['^/usr/', '*node_modules*']
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
 
 " key mapping
 let mapleader = ','
