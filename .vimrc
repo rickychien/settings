@@ -82,6 +82,7 @@ set ignorecase
 set autoindent
 set autoread
 set clipboard=unnamedplus
+set hidden
 
 " autocmd
 autocmd BufWritePre * :%s/\s\+$//e
