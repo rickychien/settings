@@ -29,9 +29,6 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'junegunn/vim-pseudocl'
 NeoBundle 'junegunn/vim-oblique'
-NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -83,6 +80,11 @@ set autoindent
 set autoread
 set clipboard=unnamedplus
 set hidden
+set title
+set visualbell
+set noerrorbells
+set nobackup
+set noswapfile
 
 " autocmd
 autocmd BufWritePre * :%s/\s\+$//e
@@ -126,3 +128,9 @@ nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.vimrc<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" Easy window navigation
+map <C-H> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
