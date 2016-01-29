@@ -27,6 +27,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'Shougo/deoplete.nvim'
+NeoBundle 'junegunn/vim-pseudocl'
+NeoBundle 'junegunn/vim-oblique'
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
@@ -117,7 +119,6 @@ let g:syntastic_warning_symbol='⚠'
 
 " key mapping
 let mapleader = ','
-nnoremap <Backspace> :noh<CR>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
