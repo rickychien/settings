@@ -29,6 +29,9 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'Shougo/deoplete.nvim'
 NeoBundle 'junegunn/vim-pseudocl'
 NeoBundle 'junegunn/vim-oblique'
+NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'othree/es.next.syntax.vim', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'gavocanov/vim-js-indent', {'autoload':{'filetypes':['javascript']}}
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
