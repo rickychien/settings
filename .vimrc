@@ -123,6 +123,12 @@ let g:syntastic_ignore_files = ['^/usr/', '*node_modules*']
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+" vim-oblique
+autocmd! User Oblique       normal! zz
+autocmd! User ObliqueStar   normal! zz
+autocmd! User ObliqueRepeat normal! zz
+hi! def link ObliqueCurrentMatch SpellLocal
+
 " key mapping
 let mapleader = ','
 nnoremap <Tab> :bnext<CR>
