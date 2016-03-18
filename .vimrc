@@ -122,6 +122,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_ignore_files = ['^/usr/', '*node_modules*']
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+let g:syntastic_javascript_checkers = ['eslint']
 
 " vim-oblique
 autocmd! User Oblique       normal! zz
