@@ -18,6 +18,7 @@
 	ac = !git add -A && git commit
 	aca = !git add -A && git commit --amend
   sync = !git pull upstream master && git push
+  hgp = "show --binary --find-renames --format=\"# HG changeset patch%n# User %an <%ae>%n%B\" -U8"
 [color]
 	ui = true
 	branch = always
