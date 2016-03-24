@@ -33,3 +33,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[bz]
+	username = rchien@mozilla.com
+	apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
