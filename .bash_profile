@@ -4,7 +4,7 @@ SOURCE_DIR=$(dirname "$(readlink ${BASH_SOURCE[0]})")
 export PS1="\[\033[1;31m\]\u\[\033[0m\] \[\033[1;33m\]\w\[\033[0;37m\]\$(__git_ps1) > "
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-export PATH=~/Documents/moz-git-tools:/usr/local/sbin:$PATH
+export PATH=~/Documents/moz-git-tools:~/Documents/git-cinnabar:/usr/local/sbin:$PATH
 
 # Load scripts
 source ${SOURCE_DIR}/git-prompt.sh
