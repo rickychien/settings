@@ -34,8 +34,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [bz]
-	username = rickychien
 	apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
-	username = Ricky
+	username = rchien@mozilla.com
 [mozreview]
 	nickname = :rickychien
