@@ -27,6 +27,7 @@
 	status = always
 [core]
 	editor = nvim
+	excludesfile = ~/.gitignore
 [push]
 	default = current
 [filter "lfs"]
