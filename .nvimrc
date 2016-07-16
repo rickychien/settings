@@ -39,6 +39,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-i> :History<CR>
+nnoremap <C-a> :Ag<CR>
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
