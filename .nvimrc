@@ -32,14 +32,14 @@ set noswapfile
 
 " key mapping
 let mapleader = ','
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
+nnoremap <C-]> :bnext<CR>
+nnoremap <C-[> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
-nnoremap <Leader>s :source ~/.vimrc<CR>
+nnoremap <Leader>s :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <C-p> :Files<CR>
-nnoremap <C-i> :History<CR>
+nnoremap <C-o> :History<CR>
 nnoremap <C-a> :Ag<CR>
 
 map <C-h> <C-w>h
@@ -56,7 +56,8 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'mxw/vim-jsx'
@@ -79,12 +80,26 @@ let g:enable_bold_font = 1
 set background=dark
 colorscheme hybrid_reverse
 
+" Tab completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" JavaScript
+let g:javascript_enable_domhtmlcss = 1
+
+" JSX
+let g:jsx_ext_required = 0 " allow JSX in normal JS files
+
 " vim-airline
-let g:airline_powerline_fonts = 1
+let g:airline_theme='base16'
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_right_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_alt_sep= ''
+let g:airline_left_sep = ''
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
