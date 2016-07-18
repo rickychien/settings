@@ -32,8 +32,8 @@ set noswapfile
 
 " key mapping
 let mapleader = ','
-nnoremap <C-]> :bnext<CR>
-nnoremap <C-[> :bprevious<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
