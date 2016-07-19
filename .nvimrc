@@ -37,7 +37,6 @@ nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader>s :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-o> :History<CR>
 nnoremap <C-a> :Ag<CR>
@@ -47,15 +46,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-tnoremap <Esc> <C-\><C-n>
-
 autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e " trim trailing whitespace on UNIX and DOS
 
 " vim plug
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/vimshell'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
