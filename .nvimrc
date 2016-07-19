@@ -116,6 +116,15 @@ hi! def link ObliqueCurrentMatch SpellLocal
 let g:deoplete#enable_at_startup = 1
 
 " neomake
-autocmd! BufWritePost * Neomake
+autocmd! BufEnter,BufWritePost * Neomake
 let g:neomake_javascript_eslint_exe = system('PATH=$(npm bin):$PATH && which eslint | tr -d "\n"')
 let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_verbose = 0
+let g:neomake_warning_sign = {
+      \ 'text': '✹',
+      \ 'texthl': 'WarningMsg',
+      \ }
+let g:neomake_error_sign = {
+      \ 'text': '✖',
+      \ 'texthl': 'ErrorMsg',
+      \ }
