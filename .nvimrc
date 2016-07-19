@@ -92,7 +92,7 @@ let g:javascript_enable_domhtmlcss = 1
 let g:jsx_ext_required = 0 " allow JSX in normal JS files
 
 " vim-airline
-let g:airline_theme='base16'
+let g:airline_theme='behelit'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -116,15 +116,15 @@ hi! def link ObliqueCurrentMatch SpellLocal
 let g:deoplete#enable_at_startup = 1
 
 " neomake
-autocmd! BufEnter,BufWritePost * Neomake
+autocmd! BufEnter,BufReadPost,BufWritePost * Neomake
 let g:neomake_javascript_eslint_exe = system('PATH=$(npm bin):$PATH && which eslint | tr -d "\n"')
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_verbose = 0
 let g:neomake_warning_sign = {
-      \ 'text': '✹',
-      \ 'texthl': 'WarningMsg',
-      \ }
+  \ 'text': '✹',
+  \ 'texthl': 'WarningMsg',
+  \ }
 let g:neomake_error_sign = {
-      \ 'text': '✖',
-      \ 'texthl': 'ErrorMsg',
-      \ }
+  \ 'text': '✖',
+  \ 'texthl': 'ErrorMsg',
+  \ }
