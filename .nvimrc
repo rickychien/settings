@@ -53,6 +53,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/vimshell'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'kuoe0/vim-buffer-switch'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
@@ -87,7 +88,7 @@ let g:javascript_enable_domhtmlcss = 1
 let g:jsx_ext_required = 0 " allow JSX in normal JS files
 
 " vim-airline
-let g:airline_theme='behelit'
+let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
