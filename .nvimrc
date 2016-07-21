@@ -87,6 +87,10 @@ let g:javascript_enable_domhtmlcss = 1
 " JSX
 let g:jsx_ext_required = 0 " allow JSX in normal JS files
 
+" NerdTree
+
+let g:NERDTreeWinSize=36
+
 " vim-airline
 let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts = 0
