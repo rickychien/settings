@@ -34,7 +34,7 @@ set noswapfile
 let mapleader = ','
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-nnoremap <Leader>d :bdelete<CR>
+nnoremap <leader>q :bp<CR>:bd #<CR>
 nnoremap <Leader>s :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
