@@ -40,6 +40,8 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-o> :History<CR>
 nnoremap <C-a> :Ag<CR>
+nnoremap rp :let @+ = expand("%")<CR> " copy current buffer file's relative path to clipboard
+nnoremap fp :let @+ = expand("%:p")<CR> " copy current buffer file's full path to clipboard
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
