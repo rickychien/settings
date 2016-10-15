@@ -2,10 +2,10 @@
 try = ssh://hg.mozilla.org/try
 
 [extensions]
-mq = 
-color = 
-rebase = 
-histedit = 
+mq =
+color =
+rebase =
+histedit =
 hgwatchman = /Users/Ricky/.mozbuild/hgwatchman/hgwatchman
 reviewboard = /Users/Ricky/.mozbuild/version-control-tools/hgext/reviewboard/client.py
 bzexport = ~/.mozbuild/version-control-tools/hgext/bzexport
@@ -37,3 +37,5 @@ qnew = -U
 [bugzilla]
 username = rchien@mozilla.com
 apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
+[hostsecurity]
+hg.mozilla.org:fingerprints = sha256:8e:ad:f7:6a:eb:44:06:15:ed:f3:e4:69:a6:64:60:37:2d:ff:98:88:37:bf:d7:b8:40:84:01:48:9c:26:ce:d9
