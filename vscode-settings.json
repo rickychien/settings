@@ -1,0 +1,37 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "500",
+    "editor.fontSize": 13,
+    "editor.renderIndentGuides": true,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.openEditors.visible": 0,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.associations": {"*.jsm":"javascript","*.build":"python"},
+    "search.exclude": {
+        "**/node_modules/**": true,
+        "**/bower_components/**": true,
+        "obj-*": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "obj-*": true,
+        "**/node_modules/**": true,
+        "**/bower_components/**": true
+    },
+    // Configure glob patterns of file paths to exclude from file watching. Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "obj-*": true
+    },
+    "trailing-spaces.trimOnSave": true,
+    "window.zoomLevel": 0
+}
