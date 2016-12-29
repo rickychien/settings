@@ -61,13 +61,14 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-surround'
-Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'w0ng/vim-hybrid'
 Plug 'elzr/vim-json'
 Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-oblique'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
 Plug 'Shougo/deoplete.nvim', has('nvim') ? {} : { 'on': [] }
@@ -77,7 +78,7 @@ call plug#end()
 " color settings
 let g:enable_bold_font = 1
 set background=dark
-colorscheme hybrid_reverse
+colorscheme hybrid
 
 " Tab completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

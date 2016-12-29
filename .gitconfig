@@ -31,6 +31,10 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = current
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
@@ -40,3 +44,5 @@
 	username = rchien@mozilla.com
 [mozreview]
 	nickname = :rickychien
+[cinnabar]
+	helper = /Users/Ricky/Documents/git-cinnabar/git-cinnabar-helper

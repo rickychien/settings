@@ -1,11 +1,5 @@
 #! /bin/bash
 
-# install neobundle first if it is inexistent
-if [ ! -d ~/.vim/bundle/.neobundle ]; then
-  echo "Install NeoBundle..."
-  curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
-fi
-
 echo "Link setting scripts to user home directory"
 
 echo $(dirname $0)
