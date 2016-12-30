@@ -9,7 +9,7 @@ SCRIPTS=('.gitconfig' '.hgrc' '.vimrc' '.zshrc')
 for script in ${SCRIPTS[@]}
 do
   echo "link $BASEDIR/$script to $HOME"
-  ln -s -f $BASEDIR/$script $HOME
+  ln -sf $BASEDIR/$script $HOME
 done
 
 exit 0
