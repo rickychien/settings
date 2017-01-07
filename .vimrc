@@ -2,8 +2,28 @@
 filetype plugin indent on
 syntax enable
 
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'mxw/vim-jsx'
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-oblique'
+Plug 'kristijanhusak/vim-hybrid-material'
+
+call plug#end()
+
 " color settings
-colorscheme peachpuff
+let g:enable_bold_font = 1
+set background=dark
+colorscheme hybrid_reverse
+highlight Normal ctermbg=none
 
 " feature settings
 
@@ -33,12 +53,24 @@ set noerrorbells
 set nobackup
 set noswapfile
 
+" vim-airline
+let g:airline_powerline_fonts = 0
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_theme='serene'
+
 " key mapping
 let mapleader = ','
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <leader>q :bp<CR>:bd #<CR>
-nnoremap <Leader>s :source ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>s :source ~/.vimrc<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-o> :History<CR>
