@@ -52,6 +52,7 @@ set visualbell
 set noerrorbells
 set nobackup
 set noswapfile
+set mouse=nicr
 
 " vim-airline
 let g:airline_powerline_fonts = 0
