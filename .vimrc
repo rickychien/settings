@@ -2,23 +2,6 @@
 filetype plugin indent on
 syntax enable
 
-" Plugins
-call plug#begin('~/.vim/plugged')
-
-Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'mxw/vim-jsx'
-Plug 'othree/yajs.vim'
-Plug 'othree/es.next.syntax.vim'
-Plug 'junegunn/vim-pseudocl'
-Plug 'junegunn/vim-oblique'
-Plug 'kristijanhusak/vim-hybrid-material'
-
-call plug#end()
-
 " color settings
 let g:enable_bold_font = 1
 set background=dark
@@ -53,6 +36,7 @@ set noerrorbells
 set nobackup
 set noswapfile
 set mouse=nicr
+set completeopt-=preview
 
 " vim-airline
 let g:airline_powerline_fonts = 0
@@ -64,7 +48,7 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-let g:airline_theme='serene'
+let g:airline_theme = 'serene'
 
 " key mapping
 let mapleader = ','
