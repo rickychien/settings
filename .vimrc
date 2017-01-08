@@ -28,7 +28,7 @@ set backspace=2
 set ignorecase
 set autoindent
 set autoread
-set clipboard=unnamedplus
+set clipboard=unnamed
 set hidden
 set title
 set visualbell
