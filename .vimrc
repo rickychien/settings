@@ -12,14 +12,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-oblique'
-Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
-Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' }
+Plug 'jacoborus/tender.vim'
+Plug 'ap/vim-css-color'
+Plug 'moll/vim-node'
+Plug 'heavenshell/vim-jsdoc'
+Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'Shougo/deoplete.nvim', has('nvim') ? { 'do': ':UpdateRemotePlugins' } : { 'on': [] }
 
 call plug#end()
@@ -27,7 +28,7 @@ call plug#end()
 " color settings
 let g:enable_bold_font = 1
 set background=dark
-colorscheme hybrid_reverse
+colorscheme tender
 highlight Normal ctermbg=none
 
 " feature settings
@@ -61,17 +62,8 @@ set mouse=nicr
 set completeopt-=preview
 set cursorline
 
-" vim-airline
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#tabline#show_buffers = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_theme = 'serene'
+" lightline
+let g:lightline = { 'colorscheme': 'wombat' }
 
 " vim-jsx-pretty
 let g:vim_jsx_pretty_enable_jsx_highlight = 1
@@ -103,4 +95,3 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e " trim trailing whitespace on UNIX and DOS
-
