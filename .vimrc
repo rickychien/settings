@@ -1,5 +1,6 @@
 " common settings
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 syntax enable
 
 if has("nvim")
@@ -27,12 +28,11 @@ call plug#end()
 
 " color settings
 let g:enable_bold_font = 1
-set background=dark
 colorscheme tender
 highlight Normal ctermbg=none
 
 " feature settings
-
+set autoread
 set number
 set numberwidth=5
 set ruler
@@ -46,7 +46,7 @@ set expandtab
 set termencoding=utf-8
 set laststatus=2
 set nowrap
-set autoread
+set magic
 set backspace=2
 set ignorecase
 set autoindent
@@ -61,6 +61,9 @@ set noswapfile
 set mouse=nicr
 set completeopt-=preview
 set cursorline
+
+" ale
+let g:ale_sign_column_always = 1
 
 " lightline
 let g:lightline = { 'colorscheme': 'wombat' }
