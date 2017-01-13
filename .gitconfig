@@ -27,7 +27,7 @@
 	interactive = always
 	status = always
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore
 [push]
 	default = current

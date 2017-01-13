@@ -60,3 +60,4 @@ export PATH=~/.mozbuild/version-control-tools/git/commands:~/Documents/git-cinna
 
 source $ZSH/oh-my-zsh.sh
 
+alias vim=nvim
