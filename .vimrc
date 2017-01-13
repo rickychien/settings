@@ -92,6 +92,7 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <leader>q :bp<CR>:bd #<CR>
 nnoremap <Leader>s :source ~/.vimrc<CR>
+nnoremap <Leader><Leader> :e ~/.vimrc<CR>
 nnoremap rp :let @+ = expand("%")<CR> " copy current buffer file's relative path to clipboard
 nnoremap fp :let @+ = expand("%:p")<CR> " copy current buffer file's full path to clipboard
 inoremap jk <esc>
