@@ -34,7 +34,8 @@ call plug#end()
 let g:enable_bold_font = 1
 colorscheme tender
 highlight Normal ctermbg=NONE guibg=NONE
-highlight Visual ctermbg=235 ctermfg=NONE guifg=NONE guibg=#282828 gui=NONE cterm=NONE
+highlight Visual ctermfg=NONE ctermbg=235 guifg=NONE guibg=#282828 gui=NONE cterm=NONE
+highlight Search ctermfg=178 ctermbg=23 guifg=#ffd700 guibg=#0a2c3c
 
 " feature settings
 set autoread
@@ -55,7 +56,6 @@ set magic
 set backspace=2
 set ignorecase
 set autoindent
-set autoread
 set clipboard=unnamed
 set hidden
 set title
