@@ -7,6 +7,10 @@ if has("nvim")
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
 
+if has("termguicolors") && $TERM_PROGRAM =~ "iTerm"
+  set termguicolors
+endif
+
 " vim plug
 call plug#begin('~/.vim/plugged')
 
@@ -29,7 +33,8 @@ call plug#end()
 " color settings
 let g:enable_bold_font = 1
 colorscheme tender
-highlight Normal ctermbg=none
+highlight Normal ctermbg=NONE guibg=NONE
+highlight Visual ctermbg=235 ctermfg=NONE guifg=NONE guibg=#282828 gui=NONE cterm=NONE
 
 " feature settings
 set autoread
