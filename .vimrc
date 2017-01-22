@@ -17,11 +17,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'itchyny/lightline.vim'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/vim-pseudocl'
 Plug 'junegunn/vim-oblique'
 Plug 'jacoborus/tender.vim'
 Plug 'ap/vim-css-color'
+Plug 'hail2u/vim-css3-syntax'
 Plug 'moll/vim-node'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'othree/yajs.vim'
@@ -70,8 +72,17 @@ set cursorline
 " ale
 let g:ale_sign_column_always = 1
 
-" lightline
-let g:lightline = { 'colorscheme': 'wombat' }
+" vim-airline
+let g:airline_powerline_fonts = 0
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_theme='serene'
 
 " vim-jsx-pretty
 let g:vim_jsx_pretty_enable_jsx_highlight = 1
