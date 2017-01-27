@@ -2,23 +2,6 @@
 	name = Ricky Chien
 	email = ricky060709@gmail.com
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-	di = diff
-  dl = diff HEAD~1
-	pf = push --force
-	pl = pull
-	re = remote
-	cp = cherry-pick
-	lg = log --pretty=format:'%Cred%h%Creset - %Cblue%cN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	ac = !git add -A && git commit
-	aca = !git add -A && git commit --amend
-  sync = !git pull upstream master && git push
-  hgp = "show --binary --find-renames --format=\"# HG changeset patch%n# User %an <%ae>%n%B\" -U8"
   mz = mozreview push
 [color]
 	ui = true
@@ -33,8 +16,6 @@
 	default = current
 [diff]
     tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f

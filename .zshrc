@@ -51,7 +51,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git gitfast)
 
 # User configuration
 
@@ -61,3 +61,7 @@ export PATH=~/.mozbuild/version-control-tools/git/commands:~/Documents/git-cinna
 source $ZSH/oh-my-zsh.sh
 
 alias vim=nvim
+
+# Git extend
+alias gb='git branch -v'
+alias grl='git reflog'

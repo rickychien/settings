@@ -15,6 +15,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'w0rp/ale'
+Plug 'terryma/vim-smooth-scroll'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
@@ -71,6 +72,12 @@ set cursorline
 
 " ale
 let g:ale_sign_column_always = 1
+
+" vim-smooth-scroll
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 " vim-airline
 let g:airline_powerline_fonts = 0
