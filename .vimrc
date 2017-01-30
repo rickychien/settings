@@ -28,7 +28,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'moll/vim-node'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'othree/yajs.vim'
-Plug 'pangloss/vim-javascript'
 Plug 'Shougo/deoplete.nvim', has('nvim') ? { 'do': ':UpdateRemotePlugins' } : { 'on': [] }
 
 call plug#end()

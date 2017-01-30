@@ -65,3 +65,7 @@ alias vim=nvim
 # Git extend
 alias gb='git branch -v'
 alias grl='git reflog'
+
+# Pure zsh prompt
+autoload -U promptinit; promptinit
+prompt pure
