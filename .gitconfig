@@ -1,29 +1,35 @@
 [user]
-	name = Ricky Chien
-	email = ricky060709@gmail.com
+  name = Ricky Chien
+  email = ricky060709@gmail.com
 [alias]
   mz = mozreview push
 [color]
-	ui = true
-	branch = always
-	diff = true
-	interactive = always
-	status = always
+  ui = true
+  branch = always
+  diff = true
+  interactive = always
+  status = always
 [core]
-	editor = nvim
-	excludesfile = ~/.gitignore
+  editor = nvim
+  excludesfile = ~/.gitignore
 [push]
-	default = current
+  default = current
 [diff]
-    tool = default-difftool
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[merge]
+  tool = vimdiff
+[mergetool]
+  path = nvim
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [bz]
-	apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
-	username = rchien@mozilla.com
+  apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
+  username = rchien@mozilla.com
 [mozreview]
-	nickname = :rickychien
+  nickname = :rickychien
 [cinnabar]
-	helper = /Users/ricky/Documents/git-cinnabar/git-cinnabar-helper
+  helper = /Users/ricky/Documents/git-cinnabar/git-cinnabar-helper
