@@ -64,7 +64,10 @@ alias vim=nvim
 
 # Git extend
 alias gb='git branch -v'
+alias gca='git add -A && git commit -v'
+alias gca!='git add -A && git commit -v --amend'
 alias grl='git reflog'
+alias gmz='git mozreview push'
 
 # Pure zsh prompt
 autoload -U promptinit; promptinit

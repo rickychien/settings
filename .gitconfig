@@ -1,8 +1,6 @@
 [user]
   name = Ricky Chien
   email = ricky060709@gmail.com
-[alias]
-  mz = mozreview push
 [color]
   ui = true
   branch = always
