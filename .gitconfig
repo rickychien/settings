@@ -31,3 +31,5 @@
   nickname = :rickychien
 [cinnabar]
   helper = /Users/ricky/Documents/git-cinnabar/git-cinnabar-helper
+[rebase]
+	autosquash = true

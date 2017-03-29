@@ -72,3 +72,5 @@ alias gmz='git mozreview push'
 # Pure zsh prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+export PATH="$HOME/.yarn/bin:$PATH"
