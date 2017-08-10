@@ -66,11 +66,21 @@ alias vim=nvim
 alias gb='git branch -v'
 alias gca='git add -A && git commit -v'
 alias gca!='git add -A && git commit -v --amend'
+alias gdl='git diff HEAD^'
 alias grl='git reflog'
 alias gmz='git mozreview push'
 
 # Pure zsh prompt
 autoload -U promptinit; promptinit
-prompt pure
+
+PURE_GIT_PULL=0
+PURE_GIT_UNTRACKED_DIRTY=0
+
+prompt purer
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+# ulimit
+ulimit -n 65536
+ulimit -u 2048
+

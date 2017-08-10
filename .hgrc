@@ -5,13 +5,14 @@ interface = curses
 git = true
 showfunc = true
 [extensions]
-color =
-pager =
-histedit =
-rebase =
+color = 
+pager = 
+histedit = 
+rebase = 
 firefoxtree = /Users/ricky/.mozbuild/version-control-tools/hgext/firefoxtree
 reviewboard = /Users/ricky/.mozbuild/version-control-tools/hgext/reviewboard/client.py
 push-to-try = /Users/ricky/.mozbuild/version-control-tools/hgext/push-to-try
+fsmonitor = 
 [pager]
 pager = LESS=FRSXQ less
 attend-help = true
