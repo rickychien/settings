@@ -8,7 +8,6 @@
   interactive = always
   status = always
 [core]
-  editor = nvim
   excludesfile = ~/.gitignore
 [push]
   default = current
@@ -29,7 +28,6 @@
   username = rchien@mozilla.com
 [mozreview]
   nickname = :rickychien
-[cinnabar]
-  helper = /Users/ricky/Documents/git-cinnabar/git-cinnabar-helper
 [rebase]
 	autosquash = true
+
