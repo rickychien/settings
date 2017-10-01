@@ -1,7 +1,7 @@
 [ui]
-username = Ricky Chien <rchien@mozilla.com>
+username = Ricky Chien <ricky060709@gmail.com>
 interface = curses
-editor = nvim
+editor = vim
 merge = internal:merge3
 [diff]
 git = true

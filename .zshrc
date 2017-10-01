@@ -65,7 +65,6 @@ alias gb='git branch -v'
 alias gca='git add -A && git commit -v'
 alias gca!='git add -A && git commit -v --amend'
 alias gdl='git diff HEAD^'
-alias grl='git reflog'
 
 # Pure zsh prompt
 autoload -U promptinit; promptinit
@@ -80,4 +79,3 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # ulimit
 ulimit -n 65536
 ulimit -u 2048
-
