@@ -66,6 +66,9 @@ alias gca='git add -A && git commit -v'
 alias gca!='git add -A && git commit -v --amend'
 alias gdl='git diff HEAD^'
 
+# Mercurial extend
+alias hgw='hg wip'
+
 # Pure zsh prompt
 autoload -U promptinit; promptinit
 
