@@ -68,6 +68,7 @@ alias gdl='git diff HEAD^'
 
 # Mercurial extend
 alias hgw='hg wip'
+alias hgpr='hg push review'
 
 # Pure zsh prompt
 autoload -U promptinit; promptinit
