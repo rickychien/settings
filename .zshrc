@@ -68,6 +68,7 @@ alias gdl='git diff HEAD^'
 
 # Mercurial extend
 alias hgw='hg wip'
+alias hgcm='hg checkout central'
 alias hgpr='hg push review'
 
 # Pure zsh prompt
