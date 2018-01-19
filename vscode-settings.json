@@ -9,11 +9,7 @@
     "explorer.openEditors.visible": 0,
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
-    "eslint.nodePath": "node_modules/.bin",
-    "files.associations": {
-        "*.jsm": "javascript",
-        "*.build": "python"
-    },
+    "files.associations": {"*.jsm":"javascript","*.build":"python"},
     "files.trimTrailingWhitespace": true,
     "search.exclude": {
         "**/node_modules/**": true,
@@ -44,11 +40,9 @@
     "editor.minimap.enabled": false,
     "editor.snippetSuggestions": "top",
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
     "workbench.iconTheme": "vscode-great-icons",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.panel.location": "bottom",
     "workbench.colorCustomizations": {
         "activityBar.background": "#191A1F",
         "activityBar.dropBackground": "#282C34",
