@@ -80,7 +80,3 @@ PURE_GIT_UNTRACKED_DIRTY=0
 prompt purer
 
 export PATH="$HOME/.yarn/bin:$PATH"
-
-# ulimit
-ulimit -n 65536
-ulimit -u 2048
