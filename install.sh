@@ -4,7 +4,7 @@ echo "Link setting scripts to user home directory"
 
 echo $(dirname $0)
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
-SCRIPTS=('.gitconfig' '.gitignore' '.hgrc' '.vimrc' '.zshrc')
+SCRIPTS=('.gitconfig' '.gitignore', '.vimrc' '.zshrc')
 
 for script in ${SCRIPTS[@]}
 do
