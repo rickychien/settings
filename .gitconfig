@@ -11,23 +11,3 @@
   excludesfile = ~/.gitignore
 [push]
   default = current
-[diff]
-  tool = nvimdiff
-[difftool "nvimdiff"]
-  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
-[merge]
-  tool = vimdiff
-[mergetool]
-  path = nvim
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
-[bz]
-  apikey = z3C6sJNhQptsJIK5yB7chpEGFHzGDh9uHxZMY0NJ
-  username = rchien@mozilla.com
-[mozreview]
-  nickname = :rickychien
-[rebase]
-	autosquash = true
-
