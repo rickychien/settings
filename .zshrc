@@ -51,12 +51,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast mercurial)
+plugins=(git gitfast)
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/X11/bin"
-export PATH=~/.mozbuild/version-control-tools/git/commands:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,17 +65,8 @@ alias gca='git add -A && git commit -v'
 alias gca!='git add -A && git commit -v --amend'
 alias gdl='git diff HEAD^'
 
-# Mercurial extend
-alias hgw='hg wip'
-alias hgcm='hg checkout central'
-alias hgpr='hg push review'
-
 # Pure zsh prompt
 autoload -U promptinit; promptinit
-
 PURE_GIT_PULL=0
 PURE_GIT_UNTRACKED_DIRTY=0
-
 prompt purer
-
-export PATH="$HOME/.yarn/bin:$PATH"
