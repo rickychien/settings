@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.fontFamily": "Droid Sans Mono",
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "editor.fontWeight": "500",
@@ -57,5 +58,6 @@
         "statusBar.background": "#14161a",
         "titleBar.activeBackground": "#14161a",
         "titleBar.inactiveBackground": "#14161a"
-    }
+    },
+    "[json]": {}
 }

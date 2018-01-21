@@ -34,11 +34,21 @@ echo "Create soft link from setting scripts to user home directory"
 
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 SCRIPTS=('.gitconfig' '.gitignore' '.vimrc' '.zshrc')
+SCRIPTS_DEST=$HOME
 
 for script in ${SCRIPTS[@]}
 do
-  echo " * link $BASEDIR/$script to $HOME"
-  ln -sf $BASEDIR/$script $HOME
+  echo " * link $BASEDIR/$script to $SCRIPTS_DEST"
+  ln -sf $BASEDIR/$script $SCRIPTS_DEST
+done
+
+VSCODE_SCRIPTS=('keybindings.json' 'settings.json')
+VSCODE_SETTINGS_DEST="$HOME/Library/Application Support/Code/User"
+
+for script in ${VSCODE_SCRIPTS[@]}
+do
+  echo " * link $BASEDIR/vscode/$script to $VSCODE_SETTINGS_DEST"
+  ln -sf $BASEDIR/vscode/$script "$VSCODE_SETTINGS_DEST"
 done
 
 exit 0
