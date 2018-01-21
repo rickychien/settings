@@ -1,16 +1,21 @@
 #! /bin/bash
 
-
 if [ "$(echo $SHELL)" != "/bin/zsh" ]
 then
   echo "Switch to zsh as default shell"
   chsh -s /bin/zsh
+else
+  echo "The default shell is zsh"
 fi
 
-if [ ! -d ~/.oh-my-zsh ]
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+if [ ! -d /usr/local/Homebrew ]
 then
-  echo "Install oh-my-zsh"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  echo "Install Homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  echo "Homebrew has already installed"
 fi
 
 echo "Create soft link from setting scripts to user home directory"
