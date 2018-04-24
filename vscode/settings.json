@@ -59,5 +59,7 @@
         "titleBar.activeBackground": "#14161a",
         "titleBar.inactiveBackground": "#14161a"
     },
-    "[json]": {}
+    "[json]": {},
+    "css.lint.unknownProperties": "ignore",
+    "scss.lint.unknownProperties": "ignore"
 }

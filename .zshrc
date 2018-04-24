@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 alias gb='git branch -v'
 alias gca='git add -A && git commit -v'
 alias gca!='git add -A && git commit -v --amend'
-alias gdl='git diff HEAD^'
+alias gl='git pull --prune'
 
 # Pure zsh prompt
 autoload -U promptinit; promptinit
