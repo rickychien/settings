@@ -49,4 +49,3 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 autocmd BufWritePre,FileWritePre * :%s/\s\+$//e | %s/\r$//e " trim trailing whitespace on UNIX and DOS
-

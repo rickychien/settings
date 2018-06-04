@@ -40,7 +40,6 @@
     "editor.minimap.enabled": false,
     "editor.snippetSuggestions": "top",
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.iconTheme": "vscode-great-icons",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.colorCustomizations": {
