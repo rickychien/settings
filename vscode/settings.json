@@ -50,7 +50,6 @@
         "input.background": "#2b3138",
         "panel.background": "#1B1E23",
         "editorGroupHeader.tabsBackground": "#191A1F",
-        "editorGroup.background": "#282C34",
         "sideBar.background": "#191A1F",
         "statusBar.background": "#14161a",
         "titleBar.activeBackground": "#14161a",
@@ -58,5 +57,6 @@
     },
     "[json]": {},
     "css.lint.unknownProperties": "ignore",
-    "scss.lint.unknownProperties": "ignore"
+    "scss.lint.unknownProperties": "ignore",
+    "workbench.colorTheme": "ƒ - Material"
 }
