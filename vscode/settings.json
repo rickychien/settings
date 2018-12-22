@@ -58,5 +58,7 @@
     "[json]": {},
     "css.lint.unknownProperties": "ignore",
     "scss.lint.unknownProperties": "ignore",
-    "workbench.colorTheme": "ƒ - Material"
+    "editor.fontWeight": "500",
+    "workbench.iconTheme": "file-icons",
+    "javascript.suggestionActions.enabled": false
 }
