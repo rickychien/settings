@@ -60,5 +60,6 @@
     "scss.lint.unknownProperties": "ignore",
     "editor.fontWeight": "500",
     "workbench.iconTheme": "file-icons",
-    "javascript.suggestionActions.enabled": false
+    "javascript.suggestionActions.enabled": false,
+    "extensions.showRecommendationsOnlyOnDemand": true
 }
