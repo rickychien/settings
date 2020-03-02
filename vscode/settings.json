@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Menlo",
     "editor.fontSize": 13.5,
     "editor.fontLigatures": true,
     "editor.renderIndentGuides": true,
@@ -35,7 +35,7 @@
         "objdir-*": true
     },
     "window.zoomLevel": 0,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.snippetSuggestions": "top",
     "editor.multiCursorModifier": "ctrlCmd",
     "explorer.confirmDelete": false,
@@ -61,5 +61,12 @@
     "editor.fontWeight": "500",
     "workbench.iconTheme": "file-icons",
     "javascript.suggestionActions.enabled": false,
-    "extensions.showRecommendationsOnlyOnDemand": true
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    },
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "/Users/Ricky/.leetcode",
+    "leetcode.defaultLanguage": "javascript"
 }

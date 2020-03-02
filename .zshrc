@@ -57,6 +57,7 @@ plugins=(git gitfast)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/X11/bin"
+export LC_ALL=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,3 +80,6 @@ prompt purer
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
